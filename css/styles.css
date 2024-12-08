@@ -522,3 +522,20 @@ max-width: 264px;
 .footer-social-link {
 
 }
+
+/* FORM */
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+background-color: var(--navy-blue-modal);
+}
+
+.modal {
+    width: 408px;
+min-height: 584px;
+background-color: var(--dairy);
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+}
