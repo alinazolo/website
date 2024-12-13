@@ -44,6 +44,8 @@ address {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
@@ -601,9 +603,11 @@ height: 24px; */
     position: fixed;
     top: 0;
     background-color: rgba(46, 47, 66, 0.4); 
+
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    
     transition-property: opacity;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -615,6 +619,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: auto;
     visibility: visible;
 }
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
 
 .modal {
     width: 408px;
@@ -715,6 +726,7 @@ margin-left: 16px;
 margin-top: 8px;
 }
 
+
 .modal-input:focus {
 border-color: var(--iris);
 }
@@ -724,16 +736,18 @@ border-color: var(--iris);
 }
 
 .modal-textarea {
+    display: block;
     background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 100%;
-    height: 40px;
+    height: 120px;
     margin-bottom: 8px;
     color: var(--navy-blue);
     padding: 8px 16px;
     outline: transparent;
     resize: none;
+
 }
 
 .modal-textarea:focus {
@@ -752,26 +766,30 @@ border-color: var(--iris);
 }
 
 .policy-icon {
-    width: 16px; height: 16px;
+    width: 16px; 
+    height: 16px;
     border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 margin-right: 8px;
-
-display: flex;
+display: inline-flex;
+/* display: flex; */
 align-items: center;
 justify-content: center;
 fill: transparent;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.modal-field {
+    margin-bottom: 24px;
+}
 
 .checkbox-wrap {
   
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
    
 }
+
 
 .modal-check:checked + .check-text span {
 background-color: var(--ocean);
@@ -780,7 +798,7 @@ fill: var(--cloud);
 }
 
 .check-text {
-    display: inline-flex;
+    /* display: inline-flex; */
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -790,6 +808,7 @@ fill: var(--cloud);
     .checkboc-policy {
         line-height: 1.3;
     text-decoration: underline;
+    text-decoration-skip-ink: none;
         color: var(--iris);
         margin-left: 4px;
     }
