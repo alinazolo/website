@@ -15,21 +15,79 @@
   <body>
     <header class="header">
         <div class="container header-wrap">
-        <nav class="header-nav">
+        
             <a href="" class="header-logo"><span class="header-logo-color">Web</span>Studio</a>
-        <ul class="header-menu-list">
-           <li><a class="header-menu-link active-link" target="_blank" rel="noopener noreferrer nofollow" href="">Studio</a></li>
-           <li><a class="header-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Portfolio</a></li>
-           <li><a class="header-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Contacts</a></li>
+            <button class="icon-link-menu">
+                <svg class="icon-menu" width="17" height="15">
+                  <use href="./images/mob-menu.svg#icon-Group-1"></use>
+                </svg>
+              </button>
+        <div class="menu-hidden">
+            <nav class="header-nav">
+            <ul class="header-menu-list">
+               <li><a class="header-menu-link active-link" target="_blank" rel="noopener noreferrer nofollow" href="">Studio</a></li>
+               <li><a class="header-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Portfolio</a></li>
+               <li><a class="header-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Contacts</a></li>
+            </ul>
+       
+        <address class="adress">
+            <ul class="header-adress-list">
+            <li class="header-adress-item"><a class="header-adress" targe="_blank" rel="noopener noreferrer nofollow" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="header-adress-item"><a class="header-adress" targe="_blank" rel="noopener noreferrer nofollow" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
-   
-    <address class="adress">
-        <ul class="header-adress-list">
-        <li class="header-adress-item"><a class="header-adress" targe="_blank" rel="noopener noreferrer nofollow" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="header-adress-item"><a class="header-adress" targe="_blank" rel="noopener noreferrer nofollow" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-    </ul>
-</address>
+    </address>
 </nav>
+</div>
+       <div class="mob-menu">
+            <button class="mob-link-close">
+                <svg class="mob-close" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+                </svg>
+              </button> 
+            <nav>
+                <ul class="mob-menu-list">
+                    <li><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Studio</a></li>
+                    <li><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Portfolio</a></li>
+                    <li><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Contacts</a></li>
+                 </ul>
+            
+             <address class="adress">
+                 <ul class="mob-adress-list">
+                 <li class="mob-adress-item"><a class="mob-adress" targe="_blank" rel="noopener noreferrer nofollow" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                 <li class="mob-adress-item"><a class="mob-adress" targe="_blank" rel="noopener noreferrer nofollow" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+             </ul>
+         </address>
+              </nav>
+              <ul class="mob-icon-list">
+                <li class="mob-icon-item">
+                    <a href="" class="mob-icon-link">
+                        <svg class="mob-icon-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-icon-item">
+                    <a href="" class="mob-icon-link">
+                        <svg class="mob-icon-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-icon-item">
+                    <a href="" class="mob-icon-link">
+                        <svg class="mob-icon-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mob-icon-item">
+                    <a href="" class="mob-icon-link">
+                        <svg class="mob-icon-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul> 
         </div>
     </header>
 <main class="main">
@@ -95,7 +153,10 @@
         <ul class="team-list">
             <li class="team-list-item">
                 <a href="" class="team-link">
-                    <img src="./images/Mark Guerrero-min.png" alt="Mark Guerrero" width="264" height="260" class="team-image">
+                    <img 
+                    srcset="./images/Mark Guerrero-min.png 1x, ./images/Mark Guerrero (1).jpg 2x"
+
+                    src="./images/Mark Guerrero-min.png" alt="Mark Guerrero" width="264" height="260" class="team-image">
                     <h3 class="team-item-title">Mark Guerrero</h3>
                     <p class="team-text">Product Designer</p>
                 </a>
@@ -132,7 +193,11 @@
             </li>
             <li class="team-list-item">
                 <a href="" class="team-link">
-                    <img src="./images/TomFord-min.png" alt="Tom Ford" width="264" height="260" class="team-image">
+                    <img 
+                    srcset="./images/TomFord-min.png 1x, ./images/TomFord2x.jpg 2x"
+                    src="./images/TomFord-min.png" 
+                    alt="Tom Ford" width="264" height="260" 
+                    class="team-image">
                     <h3 class="team-item-title">Tom Ford</h3>
                     <p class="team-text">Frontend Developer</p>
                 </a>
@@ -169,7 +234,14 @@
             </li>
             <li class="team-list-item">
                 <a href="" class="team-link">
-                    <img src="./images/Camila Garcia-min.png" alt="Camila Garcia" width="264" height="260" class="team-image">
+
+                    <img 
+                    srcset="./images/Camila Garcia-min.png 1x, ./images/Camila Garcia (1).jpg 2x"
+                    src="./images/Camila Garcia-min.png" 
+                    alt="Camila Garcia" 
+                    width="264" 
+                    height="260" 
+                    class="team-image">
                     <h3 class="team-item-title">Camila Garcia</h3>
                     <p class="team-text">Marketing</p>
                 </a>
@@ -206,7 +278,9 @@
             </li>
             <li class="team-list-item">
                 <a href="" class="team-link">
-                    <img src="./images/Daniel Wilson-min.png" alt="Daniel Wilson" width="264" height="260" class="team-image">
+                    <img 
+                    srcset="./images/Daniel Wilson-min.png 1x, ./images/Daniel Wilson (1).jpg 2x"
+                    src="./images/Daniel Wilson-min.png" alt="Daniel Wilson" width="264" height="260" class="team-image">
                     <h3 class="team-item-title">Daniel Wilson</h3>
                     <p class="team-text">UI Designer</p>
                 </a>
@@ -253,7 +327,24 @@
             <li class="portfolio-list-item">
                 
                     <div class="portfolio-overlay-wrap">
-                        <img src="./images/Banking App.jpg" alt="Banking App" width="360" class="portfolio-image">
+                        <picture>
+                            <source
+                              srcset="./images/Banking App.jpg 1x,
+                                      ./images/PC2x/Banking2x.png 2x"
+                              media="(min-width: 1158px)" />
+                            <source
+                              srcset="./images/tab/iloveimg-compressed (27)/BankingTab (2).png 1x, 
+                                      ./images/tab/iloveimg-compressed (27)/BankingApp 2x (1).png 2x"
+                              media="(min-width: 768px)" />
+                            <source
+                              srcset="./images/pictures_mob/BankingApp.png 1x, 
+                                      ./images/pictures_mob/BankingApp2x.png 2x"
+                              media="(min-width: 320px)" />
+                              <img src="./images/Banking App.jpg" alt="Banking App" width="360" class="portfolio-image"/>
+                          </picture>
+                          
+
+                        
                         <p class="portfolio-text-overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · 
                             Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
@@ -330,7 +421,7 @@
 </section>
 </main>
          
-    <footer class="footer">
+    <!-- <footer class="footer">
        <div  class="container footer-wrap">  
             <div>
                 <a href="" class="footer-logo"><span class="footer-accent">Web</span> Studio</a>
@@ -389,7 +480,7 @@
         </form>
      </div>
        </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-open is-hidden" data-modal>
         <div class="modal">
           <button class="icon-link-close" data-modal-close>
@@ -492,3 +583,20 @@
     <script src="./modal.js"></script>
   </body>
 </html>
+
+
+2️⃣ 6 нових навчальних зумінарів, які стали проривом у 2024 році! 📘
+Цього року ми представили 6 нових програм та курсів, серед яких довгоочікувані курси з сучасних методів КПТ третьої хвилі та  сексології 🌺 для роботи з найпоширенішими запитами.
+
+Особливою гордістю стали курси третьої хвилі КПТ та сексології, які інтегрували майндфулнес 🧘‍♂️, техніки прийняття та емоційної регуляції. 
+
+Завдяки цим знанням наші студенти тепер впевненіше працюють із <a href="https://upproschool.com/anxiety">тривожністю </a>😟,  <a href="https://upproschool.com/depression">депресією 😔</a>, <a href="https://upproschool.com/amsr">навіть з клієнтами з суїцидом»</a>та <a href="https://upproschool.com/physical_integrity">втратою тілесної цінності</a>, <a href="https://upproschool.com/zoominar5">відновлюють віру й мотивацію 🕊</a>.
+
+А для тих, хто працює з запитами в сфері сексології, ми створили спеціалізовані курси, що допомагають впоратися з <a href="https://upproschool.com/sexual-disharmonies">сексуальними дисгармоніями</a>😟 та <a href="https://upproschool.com/p-addiction">порнозалежністю</a> та <a href="https://upproschool.com/anxiety">допомагати вирішувати інші «пікантні» запити,</a> використовуючи сучасні доказові методи.
+
+Також ми cтворили довгоочікуваний <a href="https://upproschool.com/pro_marketing">курс із маркетингу «PRO Маркетинг: Клієнти щодня!»</a>, що створений спеціально для хелперів, щоб допомогти збільшити кількість клієнтів 📊 та чек на послуги.
+
+🌟 В Міжнародний день волонтера запустили <a href="hhttps://upproschool.com/goals">курс «Усвідомлене цілепокладання» і зробили його безкоштовним</a>, щоб якомога більше учасників спільноти змогли спланувати наступний рік ефективно. 📅
+
+😊 І ми щасливі, що до курсу вже приєдналося більше 1 989 студентів 🙌 та він отримав високі оцінки ⭐️⭐️⭐️⭐️⭐️ від вас. 
+
