@@ -17,47 +17,48 @@
         <div class="container header-wrap">
         
             <a href="" class="header-logo"><span class="header-logo-color">Web</span>Studio</a>
-            <button class="icon-link-menu">
+            <button class="icon-link-menu" mob-modal-open>
                 <svg class="icon-menu" width="17" height="15">
                   <use href="./images/mob-menu.svg#icon-Group-1"></use>
                 </svg>
               </button>
-        <div class="menu-hidden">
-            <nav class="header-nav">
+            <nav class="header-nav menu-hidden">
             <ul class="header-menu-list">
-               <li><a class="header-menu-link active-link" target="_blank" rel="noopener noreferrer nofollow" href="">Studio</a></li>
+               <li ><a class="header-menu-link active-link" target="_blank" rel="noopener noreferrer nofollow" href="">Studio</a></li>
                <li><a class="header-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Portfolio</a></li>
                <li><a class="header-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Contacts</a></li>
             </ul>
-       
-        <address class="adress">
+        </nav>
+        <address class="adress menu-hidden">
             <ul class="header-adress-list">
             <li class="header-adress-item"><a class="header-adress" targe="_blank" rel="noopener noreferrer nofollow" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="header-adress-item"><a class="header-adress" targe="_blank" rel="noopener noreferrer nofollow" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
-</nav>
-</div>
-       <div class="mob-menu">
-            <button class="mob-link-close">
-                <svg class="mob-close" width="8" height="8">
-                  <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
-                </svg>
-              </button> 
-            <nav>
-                <ul class="mob-menu-list">
-                    <li><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Studio</a></li>
-                    <li><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Portfolio</a></li>
-                    <li><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Contacts</a></li>
-                 </ul>
-            
-             <address class="adress">
+
+       
+    </header>
+    <div class="mob-menu is-hidden-mob" mob-data-modal>
+        <button class="mob-link-close" mob-modal-close>
+            <svg class="mob-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+            </svg>
+          </button> 
+        <nav>
+            <ul class="mob-menu-list">
+                <li class="mob-menu-item"><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Studio</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Portfolio</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link" target="_blank" rel="noopener noreferrer nofollow" href="">Contacts</a></li>
+             </ul>
+            </nav>
+         <div class="adress-link">
+             <address class="mob-adress">
                  <ul class="mob-adress-list">
                  <li class="mob-adress-item"><a class="mob-adress" targe="_blank" rel="noopener noreferrer nofollow" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                  <li class="mob-adress-item"><a class="mob-adress" targe="_blank" rel="noopener noreferrer nofollow" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
              </ul>
          </address>
-              </nav>
+              
               <ul class="mob-icon-list">
                 <li class="mob-icon-item">
                     <a href="" class="mob-icon-link">
@@ -88,11 +89,11 @@
                     </a>
                 </li>
             </ul> 
-        </div>
-    </header>
+         </div>
+    </div>
 <main class="main">
     <section class="hero-section">
-        <div class="hero container">
+        <div class="hero">
             <div class="container-wrap">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-btn-main is-open" data-modal-open>Order Service</button>
@@ -421,14 +422,14 @@
 </section>
 </main>
          
-    <!-- <footer class="footer">
+<footer class="footer">
        <div  class="container footer-wrap">  
-            <div>
+            <div class="footer-logo-wrap">
                 <a href="" class="footer-logo"><span class="footer-accent">Web</span> Studio</a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </div>
-            <div>
-         <h3 class="form-title">Social media</h3>
+            <div class="footer-links-wrap">
+         <p class="title-links-footer">Social media</p>
          <ul class="footer-icon-list">
             <li class="footer-icon-item">
                 <a href="" class="footer-icon-link">
@@ -440,7 +441,7 @@
             <li class="footer-icon-item">
                 <a href="" class="footer-icon-link">
                     <svg class="footer-icon-icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                            <use href="./images/icons.svg#icon-twitter-1-1"></use>
                     </svg>
                 </a>
             </li>
@@ -460,16 +461,18 @@
             </li>
         </ul>
     </div>
-     <div>
-         <p class="form-title">Subscribe</p>
-         <form class="footer-form">
-            <label for="footer-email">
-                <input
-                type="email"
-                name="footer-email"
-                placeholder="E-mail"
-                class="footer-input"/>
-            </label>
+     <div class="form-footer-wrap">
+         <div>
+             <p class="title-links-footer">Subscribe</p>
+             <form class="footer-form">
+                <label for="footer-email">
+                    <input
+                    type="email"
+                    name="footer-email"
+                    placeholder="E-mail"
+                    class="footer-input"/>
+                </label>
+         </div>
          <button type="submit" class="footer-btn">Subscribe 
             <span class="footer-form-icon">
             <svg class="footer-input-icon" width="24" height="20">
@@ -480,7 +483,7 @@
         </form>
      </div>
        </div>
-    </footer> -->
+    </footer> 
     <div class="backdrop is-open is-hidden" data-modal>
         <div class="modal">
           <button class="icon-link-close" data-modal-close>
@@ -584,19 +587,4 @@
   </body>
 </html>
 
-
-2️⃣ 6 нових навчальних зумінарів, які стали проривом у 2024 році! 📘
-Цього року ми представили 6 нових програм та курсів, серед яких довгоочікувані курси з сучасних методів КПТ третьої хвилі та  сексології 🌺 для роботи з найпоширенішими запитами.
-
-Особливою гордістю стали курси третьої хвилі КПТ та сексології, які інтегрували майндфулнес 🧘‍♂️, техніки прийняття та емоційної регуляції. 
-
-Завдяки цим знанням наші студенти тепер впевненіше працюють із <a href="https://upproschool.com/anxiety">тривожністю </a>😟,  <a href="https://upproschool.com/depression">депресією 😔</a>, <a href="https://upproschool.com/amsr">навіть з клієнтами з суїцидом»</a>та <a href="https://upproschool.com/physical_integrity">втратою тілесної цінності</a>, <a href="https://upproschool.com/zoominar5">відновлюють віру й мотивацію 🕊</a>.
-
-А для тих, хто працює з запитами в сфері сексології, ми створили спеціалізовані курси, що допомагають впоратися з <a href="https://upproschool.com/sexual-disharmonies">сексуальними дисгармоніями</a>😟 та <a href="https://upproschool.com/p-addiction">порнозалежністю</a> та <a href="https://upproschool.com/anxiety">допомагати вирішувати інші «пікантні» запити,</a> використовуючи сучасні доказові методи.
-
-Також ми cтворили довгоочікуваний <a href="https://upproschool.com/pro_marketing">курс із маркетингу «PRO Маркетинг: Клієнти щодня!»</a>, що створений спеціально для хелперів, щоб допомогти збільшити кількість клієнтів 📊 та чек на послуги.
-
-🌟 В Міжнародний день волонтера запустили <a href="hhttps://upproschool.com/goals">курс «Усвідомлене цілепокладання» і зробили його безкоштовним</a>, щоб якомога більше учасників спільноти змогли спланувати наступний рік ефективно. 📅
-
-😊 І ми щасливі, що до курсу вже приєдналося більше 1 989 студентів 🙌 та він отримав високі оцінки ⭐️⭐️⭐️⭐️⭐️ від вас. 
 

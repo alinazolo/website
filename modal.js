@@ -24,3 +24,21 @@
     }
   })();
   
+  (() => {
+    const refs = {
+        openMobBtn: document.querySelector("[mob-modal-open]"),
+        closeMobalBtn: document.querySelector("[mob-modal-close]"),
+        mobModal: document.querySelector("[mob-data-modal]"),
+    };
+
+    if (refs.openMobBtn && refs.closeMobalBtn && refs.mobModal) {
+        refs.openMobBtn.addEventListener("click", toggleModal);
+        refs.closeMobalBtn.addEventListener("click", toggleModal);
+    } else {
+        console.error("Не найдены элементы с атрибутами mob-modal-open, mob-modal-close или mob-data-modal.");
+    }
+
+    function toggleModal() {
+        refs.mobModal.classList.toggle("is-hidden-mob");
+    }
+})();
